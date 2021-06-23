@@ -36,7 +36,7 @@ public class User {
     private LocalDateTime modified;
 
     @Column
-    private LocalDateTime lastlogin;
+    private LocalDateTime lastLogin;
 
     @Column(nullable = false)
     private String token;
@@ -70,7 +70,7 @@ public class User {
                 String password,
                 LocalDateTime created,
                 LocalDateTime modified,
-                LocalDateTime lastlogin,
+                LocalDateTime lastLogin,
                 String token,
                 Boolean isactive,
                 List<Phone> phones) {
@@ -80,7 +80,7 @@ public class User {
         this.password = password;
         this.created = created;
         this.modified = modified;
-        this.lastlogin = lastlogin;
+        this.lastLogin = lastLogin;
         this.token = token;
         this.isactive = isactive;
         this.phones = phones;
